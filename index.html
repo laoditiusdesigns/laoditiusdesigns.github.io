@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>My Portfolio</title>
+</head>
+<body>
+    <div class="nav-bar">
+        <div class="nav-header">
+            <h1>LD</h1>
+        </div>
+        <div class="hamburger">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="img-control">
+            <img src="./img/middlef.jpg" alt="middlef">
+        </div>
+        <div class="love">
+            <h3>surprise surprise ma Bitxh</h3>
+            <audio src="laugh.mp3" id="laugh"></audio>
+            <audio src="fart.mp3" id="fart"></audio>
+            <h1>I LOVE YOU</h1>
+        </div>
+        <button type="button" class="btn">Open Porfolio</button>
+    </div>
+    <script>
+        const btnOpen = document.querySelector('.btn');
+        const img = document.querySelector('img');
+        const loveDiv = document.querySelector('.love');
+        const laugh = document.querySelector('#laugh');
+         const fart = document.querySelector('#fart');
+        btnOpen.addEventListener('click', showPorfolio);
+
+        function showPorfolio(e){
+            laugh.play();
+            img.style.right = '0';
+            e.target.remove();
+            setTimeout(()=> {
+                loveDiv.style.left = '0';
+            }, 2000);
+            setTimeout(()=> {
+                fart.play();
+            },2200);
+        }
+    </script>
+</body>
+</html>
