@@ -11,6 +11,7 @@ body {
     background-position: center;
     object-fit: cover;
     background-repeat: no-repeat;
+    overflow: hidden;
 }
 
 .container {
@@ -25,11 +26,14 @@ body {
 img {
     width: 20em;
     position: relative;
-    right: -200%;
-    transition: all .2s ease-in;
+    bottom: -300%;
+    transition: all .5s ease-in;
+    margin-top: 4em;
 }
 
 button {
+    position: relative;
+    top: -40%;
     background-color: rgb(3, 105, 168);
     color: #fff;
     border: none;
@@ -46,22 +50,27 @@ button:hover {
 }
 
 .nav-bar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
     display: flex;
     justify-content: space-between;
-    background-color: #111;
+    background-color: #ebebeb;
     padding: 10px 7%;
     align-items: center;
+    z-index: 1000;
 }
 
 h1 {
-    color: #fff;
+    color: #111;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .bar {
     width: 25px;
     height: 3px;
-    background-color: #fff;
+    background-color: #111;
     margin: 5px;
     box-sizing: border-box;
     display: block;
@@ -71,9 +80,18 @@ h1 {
     background-color: rgba(1, 217, 255, 0.479);
     padding: 10px;
     position: relative;
-    left: -100%;
+    bottom: -100%;
     transition: all .3s ease-in-out;
     border-radius: 9px;
+}
+
+.love h1 {
+    color: #fff;
+}
+
+.love:hover {
+    background-color: rgba(255, 1, 22, 0.479);
+    color: #fff;
 }
 
 @media only screen and (max-width: 550px) {
