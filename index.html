@@ -17,42 +17,6 @@
             <div class="bar"></div>
         </div>
     </div>
-    <div class="container">
-        <div class="img-control">
-            <img src="./img/middlef.jpg" alt="middlef">
-        </div>
-        <div class="love">
-            <h3>surprise surprise ma Bitxh</h3>
-            <audio src="laugh.mp3" id="laugh"></audio>
-            <audio src="fart.mp3" id="fart"></audio>
-            <audio src="whoosh.mp3" id="whoosh"></audio>
-            <h1>I LOVE YOU</h1>
-        </div>
-        <button type="button" class="btn">Open Porfolio</button>
-    </div>
-    <script>
-        const btnOpen = document.querySelector('.btn');
-        const img = document.querySelector('img');
-        const loveDiv = document.querySelector('.love');
-        const laugh = document.querySelector('#laugh');
-        const whoosh = document.querySelector('#whoosh');
-         const fart = document.querySelector('#fart');
-        btnOpen.addEventListener('click', showPorfolio);
-
-        function showPorfolio(e){
-            whoosh.play();
-            img.style.bottom = '0';
-            setTimeout(()=> {
-                laugh.play();
-            },1000)
-            btnOpen.style.opacity = '0';
-            setTimeout(()=> {
-                loveDiv.style.bottom = '0';
-            }, 2000);
-            setTimeout(()=> {
-                fart.play();
-            },2200);
-        }
-    </script>
+    
 </body>
 </html>
